@@ -1,5 +1,5 @@
 <template>
-PLAceholder
+Register as a Coach
 
 </template>
 

@@ -13,14 +13,14 @@ export default {
                     lastName: 'Reyes',
                     areas: ['frontend', 'backend', 'career'],
                     description:
-                        "I'm Maximilian and I've worked as a freelance web developer for years. Let me help you become a developer as well!",
+                        "I'm Abe and I'm a freelance web developer. Let me help you become a developer as well!",
                     hourlyRate: 39
                 },
                 {
                     id: 'c2',
                     firstName: 'Andrea',
                     lastName: 'Caputo',
-                    areas: ['frontend', 'career'],
+                    areas: ['career'],
                     description:
                         'I am Julie and as a senior developer in a big tech company, I can help you get your first job or progress in your current role.',
                     hourlyRate: 39

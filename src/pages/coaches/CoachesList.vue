@@ -4,18 +4,17 @@
   </section>
   <section>
     <base-card>
-      <h2>Coaches List</h2>
       <div class="controls">
         <base-button mode="outline">Refresh</base-button>
-        <base-button v-if="!isCoach" link to="/register">Register as a Coach</base-button>
+        <base-button v-if="!isCoach" link to="/register">Register as Coach</base-button>
       </div>
       <ul v-if="hasCoaches">
         <coach-item
           v-for="coach in filteredCoaches"
           :key="coach.id"
           :id="coach.id"
-          :firstName="coach.firstName"
-          :lastName="coach.lastName"
+          :first-name="coach.firstName"
+          :last-name="coach.lastName"
           :rate="coach.hourlyRate"
           :areas="coach.areas"
         ></coach-item>
@@ -44,11 +43,9 @@ export default {
     };
   },
   computed: {
-    computed: {
     isCoach() {
       return this.$store.getters['coaches/isCoach'];
-    }
-  },
+    },
     filteredCoaches() {
       const coaches = this.$store.getters['coaches/coaches'];
       return coaches.filter((coach) => {

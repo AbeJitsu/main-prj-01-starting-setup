@@ -14,7 +14,7 @@ export default {
                     lastName: 'Reyes',
                     areas: ['frontend', 'backend', 'career'],
                     description:
-                        "I'm Abe and I'm a freelance web developer. Let me help you become a developer as well!",
+                        "I'm Abe, a freelance web developer. Let me help you build your vision!",
                     hourlyRate: 39
                 },
                 {

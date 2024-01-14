@@ -10,7 +10,7 @@
         <input type="password" id="password" v-model.trim="password" />
       </div>
       <p v-if="!formIsValid">
-        Please enter a valid email and password - atlease 6 characters long.
+        Please enter a valid email and password - at least 6 characters long.
       </p>
       <base-button>{{ submitButtonCaption }}</base-button>
       <base-button type="button" mode="flat" @click="switchAuthMode"
@@ -56,6 +56,15 @@ export default {
       ) {
         this.formIsValid = false;
         return;
+      }
+
+      if (this.mode === 'login') {
+        // ...
+      } else {
+        this.$store.dispatch('signup', {
+          email: this.email,
+          password: this.password,
+        });
       }
       // send http request...
     },

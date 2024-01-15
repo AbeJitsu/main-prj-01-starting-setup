@@ -17,7 +17,8 @@ export default {
     if (!response.ok) {
       console.log(responseData);
       const error = new Error(
-        responseData.message || 'Failed to authenticate.'
+        responseData.message ||
+          'Something went wrong while signing up, please try again later.'
       );
       throw error;
     }

@@ -19,39 +19,43 @@
 header {
   width: 100%;
   height: 5rem;
-  background-color: #3d008d;
+  background-color: #030e4f;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px .3rem -2px gray;
 }
 
 header a {
   text-decoration: none;
-  color: #f391e3;
+  color: #F49F1C;
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  border: 1px solid transparent;
+  border: 1px   #F49F1C;
 }
 
 a:active,
 a:hover,
 a.router-link-active {
-  border: 1px solid #f391e3;
+  border: 1px solid #F49F1C;
 }
 
 h1 {
   margin: 0;
+  
 }
 
 h1 a {
-  color: white;
+  color: #F49F1C;
   margin: 0;
+  
 }
 
 h1 a:hover,
 h1 a:active,
 h1 a.router-link-active {
-  border-color: transparent;
+    border: 1px solid #F49F1C;   
+
 }
 
 header nav {

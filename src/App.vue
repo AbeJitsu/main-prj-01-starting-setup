@@ -27,7 +27,7 @@ export default {
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 body {

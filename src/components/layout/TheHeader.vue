@@ -9,9 +9,12 @@
         <li v-if="isLoggedIn">
           <router-link to="/requests">Requests</router-link>
         </li>
-          <li v-else>
-            <router-link to="/auth">Login</router-link>
-          </li>
+        <li v-else>
+          <router-link to="/auth">Login</router-link>
+        </li>
+        <li v-if="isLoggedIn">
+          <base-button @click="logout">Logout</base-button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -22,40 +25,44 @@ export default {
   computed: {
     isLoggedIn() {
       return this.$store.getters.isAuthenticated;
+    },
+  },
+   methods: {
+    logout() {
+      this.$store.dispatch('logout');
+      this.$router.replace('/coaches')
     }
-  }
-}
+   }
+};
 </script>
 
 <style scoped>
-
 header {
   width: 100%;
   height: 5.5rem;
-  background-color: #FFFFFF; /* Changed to white */
+  background-color: #ffffff; /* Changed to white */
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   font-size: 1.2em;
 }
 
 header a {
   text-decoration: none;
-  color: #F49F1C; /* Orange color for text */
+  color: #f49f1c; /* Orange color for text */
   background-color: #030e4f; /* Blue background for buttons */
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: black;
 
-  border-radius: .2em;
-  
+  border-radius: 0.2em;
 }
 
 a:active,
 a:hover,
 a.router-link-active {
-  border: 1px solid #F49F1C;
+  border: 1px solid #f49f1c;
   border-width: 3px;
 }
 
@@ -64,18 +71,17 @@ h1 {
 }
 
 h1 a {
-  color: #F49F1C;
+  color: #f49f1c;
   margin: 0;
 }
 
 h1 a:hover,
 h1 a:active,
 h1 a.router-link-active {
-  border: .1em solid #F49F1C; 
+  border: 0.1em solid #f49f1c;
   border-radius: 12px;
-  border-color: #F49F1C;
+  border-color: #f49f1c;
   box-shadow: #f49f1c;
-  
 }
 
 header nav {
@@ -98,5 +104,4 @@ header ul {
 li {
   margin: 0 0.5rem;
 }
-
 </style>

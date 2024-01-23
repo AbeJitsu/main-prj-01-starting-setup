@@ -57,13 +57,18 @@ header a {
   border: black;
 
   border-radius: 0.2em;
+  
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  
 }
+
 
 a:active,
 a:hover,
 a.router-link-active {
-  border: 1px solid #f49f1c;
-  border-width: 3px;
+  border: 3px solid #f49f1c;
+  /* border-width: 3px; */
 }
 
 h1 {
@@ -72,16 +77,18 @@ h1 {
 
 h1 a {
   color: #f49f1c;
-  margin: 0;
+  /* margin: 0; */
+  border-radius: 0.2em;
+
 }
 
 h1 a:hover,
 h1 a:active,
 h1 a.router-link-active {
-  border: 0.1em solid #f49f1c;
-  border-radius: 12px;
+  /* border: 0.1em solid #f49f1c; */
+  
   border-color: #f49f1c;
-  box-shadow: #f49f1c;
+  
 }
 
 header nav {

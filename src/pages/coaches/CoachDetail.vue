@@ -78,5 +78,6 @@ p {
   margin: 0.5rem 0;
   padding: 2em;
   line-height: 1.5em;
+  font-size: 1.1em;
 }
 </style>

@@ -39,19 +39,27 @@ li {
 
 h3 {
   font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.01rem 0;
 }
 
-h3,
 h4 {
-  margin: 0.5rem 0;
+  padding: 0.1rem 0;
+  margin: 0.5rem;
+  
 }
 
 div {
-  margin: 0.5rem 0;
+  margin: 0.5rem;
+  padding: 0.1rem;
+  align-items: center;
 }
 
 .actions {
   display: flex;
   justify-content: flex-end;
+  padding: 0.9rem;
+  margin: 0.5rem;
+  
 }
 </style>

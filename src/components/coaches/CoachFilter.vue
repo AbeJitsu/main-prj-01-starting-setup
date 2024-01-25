@@ -1,17 +1,17 @@
 <template>
   <base-card>
-    <h2>Find Your Coach</h2>
+    <h2>Connect with Your Ideal Tech Mentor!</h2>
     <span class="filter-option">
       <input type="checkbox" id="frontend" checked @change="setFilter" />
-      <label for="frontend">Frontend</label>
+      <label for="frontend">Front-End</label>
     </span>
     <span class="filter-option">
       <input type="checkbox" id="backend" checked @change="setFilter" />
-      <label for="backend">Backend</label>
+      <label for="backend">Back-End</label>
     </span>
     <span class="filter-option">
-      <input type="checkbox" id="career" checked @change="setFilter" />
-      <label for="career">Career</label>
+      <input type="checkbox" id="techsupport" checked @change="setFilter" />
+      <label for="techsupport">Tech Support</label>
     </span>
   </base-card>
 </template>
@@ -24,7 +24,7 @@ export default {
       filters: {
         frontend: true,
         backend: true,
-        career: true,
+        techsupport: true,
       },
     };
   },

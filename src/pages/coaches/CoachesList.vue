@@ -10,9 +10,9 @@
     <base-card>
       <div class="controls">
         <base-button mode="outline" @click="loadCoaches(true)">Refresh</base-button>
-        <base-button link to ="/auth?redirect=register" v-if="!isLoggedIn">Login to Register as a Coach</base-button>
+        <base-button link to ="/auth?redirect=register" v-if="!isLoggedIn">Teach & Inspire as a Tech Tutor</base-button>
         <base-button v-if="isLoggedIn && !isCoach && !isLoading" link to="/register"
-          >Register as Coach</base-button
+          >Teach & Inspire as a Tech Tutor</base-button
         >
       </div>
       <div v-if="isLoading">
@@ -51,7 +51,7 @@ export default {
       activeFilters: {
         frontend: true,
         backend: true,
-        career: true,
+        techsupport: true,
       },
     };
   },
@@ -71,7 +71,7 @@ export default {
         if (this.activeFilters.backend && coach.areas.includes('backend')) {
           return true;
         }
-        if (this.activeFilters.career && coach.areas.includes('career')) {
+        if (this.activeFilters.techsupport && coach.areas.includes('techsupport')) {
           return true;
         }
         return false;

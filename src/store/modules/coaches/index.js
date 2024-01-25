@@ -8,24 +8,24 @@ export default {
         return {
             lastFetch: null,
             coaches: [
-                {
-                    id: 'c1',
-                    firstName: 'Abe',
-                    lastName: 'Reyes',
-                    areas: ['frontend', 'backend', 'career'],
-                    description:
-                        "I'm Abe, a freelance web developer. Let me help you build your vision!",
-                    hourlyRate: 39
-                },
-                {
-                    id: 'c2',
-                    firstName: 'Andrea',
-                    lastName: 'Caputo',
-                    areas: ['career'],
-                    description:
-                        'I am Julie and as a senior developer in a big tech company, I can help you get your first job or progress in your current role.',
-                    hourlyRate: 39
-                }
+                // {
+                //     id: 'c1',
+                //     firstName: 'Abe',
+                //     lastName: 'Reyes',
+                //     areas: ['frontend', 'backend', 'techsupport'],
+                //     description:
+                //         "I'm Abe, a freelance web developer. Let me help you build your vision!",
+                //     hourlyRate: 39
+                // },
+                // {
+                //     id: 'c2',
+                //     firstName: 'Andrea',
+                //     lastName: 'Caputo',
+                //     areas: ['techsupport'],
+                //     description:
+                //         'I am Julie and as a senior developer in a big tech company, I can help you get your first job or progress in your current role.',
+                //     hourlyRate: 39
+                // }
             ]
         }
     },

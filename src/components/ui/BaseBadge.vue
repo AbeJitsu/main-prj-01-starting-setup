@@ -21,21 +21,21 @@ export default {
   border-radius: 30px;
   padding: 0.5rem 1.5rem;
   display: inline-block;
-  margin-right: 0.5rem;
+  margin: 0.4rem;
 }
 
 .frontend {
-  background-color: #3d008d;
+  background-color: #7ba3cc;
   color: white;
 }
 
 .backend {
-  background-color: #71008d;
+  background-color: #995c5c;
   color: white;
 }
 
-.career {
-  background-color: #8d006e;
+.techsupport {
+  background-color: #76946a;
   color: white;
 }
 </style>
